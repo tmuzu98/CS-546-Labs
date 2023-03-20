@@ -1,0 +1,22 @@
+<main>
+    <div class="card-wide">
+            <h2>Sign up</h2>
+            <form id="sign-form" name ="signup" action="/signup" method="POST">
+                <label>
+                    <input type="text" name="username" id="username" class = "inputFields" placeholder="Enter your Username" />  
+                </label>
+                <label>
+                    <input type="password" name="password" id="password" class = "inputFields" placeholder="Enter your Password" />
+                </label>
+                <button type="submit" class="btn">Signup</button>
+            </form>
+            <a href="/login">Already have an account? Click here to login</a>
+        </div>
+    <div>
+        {{#if hasErrors}}
+        <div class="error">
+                        {{msg}} 
+        </div>
+        {{/if}}
+    </div>
+</main>

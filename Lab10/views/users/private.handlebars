@@ -1,0 +1,14 @@
+<main>
+    <dl>
+        <dt>Username</dt>
+        <dd>{{username}}</dd>
+    </dl>
+    <a href="/logout">logout</a>
+    {{#if hasErrors}}
+  {{#each errors}}
+    <li>
+    {{this}}
+    </li>
+  {{/each}}
+{{/if}}
+</main>

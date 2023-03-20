@@ -1,0 +1,18 @@
+<div class="center">
+    <h1>Character Finder</h1>
+    <main>
+        <p>
+            Character Finder is a web application where you can search for all the marvel characters 
+            that are there in the marvel universe and yoou can find them using the given search box and 
+            it will show all the marvel character that are there with that given search term provided.
+        </p>
+        <form action="/search" method="POST" class="new-post-form">
+        <label>
+            {{data.name}}
+            <input type="text" name="title" placeholder="SearchTerm" value="{{data.name}}"
+            class="full-width-input" />
+        </label>
+        <button type="submit">Submit</button>
+        </form>
+    </main>
+</div>

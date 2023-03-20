@@ -1,0 +1,51 @@
+html,
+body {
+	font-size: 10pt;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+	background: #553d67;
+}
+
+h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	color: red;
+	margin: 30px 50px;
+}
+
+h2 {
+	font-size: 1.75rem;
+	color: balck;
+}
+
+.is-palindrome {
+	color: #0000ff;
+	font-size: 1.5rem;
+}
+
+.not-palindrome {
+	color: #ff0000;
+	font-size: 1.5rem;
+}
+
+form {
+	padding: 30px 30px;
+	text-align: center;
+	border-style: solid;
+	border-width: 5px;
+}
+
+textarea {
+	width: 150px;
+	height: 25px;
+}
+
+.attempts {
+	text-align: center;
+}
+
+p {
+	color: hotpink;
+}

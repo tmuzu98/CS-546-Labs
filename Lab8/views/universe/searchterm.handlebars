@@ -1,0 +1,25 @@
+<h1>Character Finder</h1>
+<h2>{{this.demo.title}}</h2>
+{{#if data}}
+<ul>
+    {{#each data}}
+    <li>
+        <a href="/characters/{{this.id}}">{{this.name}}</a>
+    </li>
+    {{/each}}
+</ul>
+{{else}}
+<p class="not-found">We're sorry, but no results were found for {{this.demo.title}}.</p>
+{{/if}}
+
+{{#if hasErrors}}
+{{#each errors}}
+<li>
+    {{this}}
+</li>
+{{/each}}
+{{/if}}
+
+<div class="another">
+    <a href="/">Make another search</a>
+</div>

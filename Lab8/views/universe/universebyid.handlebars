@@ -1,0 +1,22 @@
+<main>
+<div>
+    <h1>
+        {{title}}
+    </h1>
+    <img class="imgbox" src="{{path}}" alt="{{name}}" />
+    {{!-- <img class="imgbox" src="nothing" alt="{{name}}" /> --}}
+    <dl>
+        <dt>Description</dt>
+        <dd>{{description}}</dd>
+        <dt></dt>
+        <dd>
+            <h2>Comics</h2>
+            <ul>
+                {{#each comics}}
+                <li>{{this.name}}</li>
+                {{/each}}
+            </ul>
+        </dd>
+    </dl>
+</div>
+</main>
